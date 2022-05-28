@@ -1,0 +1,7 @@
+@use 'sass:math';
+@import url('static/fonts/Montserrat/fonts/webfonts/Montserrat.css');
+@import './libs/mixins.scss';
+@import './main.scss';
+@import './components/app/app.scss';
+@import './components/footer/index.scss';
+@import './components/header/index.scss';

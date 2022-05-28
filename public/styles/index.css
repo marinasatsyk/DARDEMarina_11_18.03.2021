@@ -1,0 +1,88 @@
+@import url("static/fonts/Montserrat/fonts/webfonts/Montserrat.css");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrapper_body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.wrapImage {
+  overflow: hidden;
+  border-radius: 25px;
+  height: 223px;
+}
+.wrapImage .cover {
+  object-fit: scale-down;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  min-width: 335px;
+  min-height: 255px;
+  max-width: 340px;
+  max-height: 340px;
+  overflow: hidden;
+}
+.card img {
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.header img {
+  height: 68px;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+.header li {
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  color: #ff6060;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+html,
+body {
+    height: 100%;
+}
+#wrapper_body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main {
+    height: 100%;
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+// #wrapper_main {
+//     margin: 100px 100px 0px 100px;
+// }

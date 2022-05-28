@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+
+    img {
+        height: 68px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        color: #ff6060;
+    }
+}

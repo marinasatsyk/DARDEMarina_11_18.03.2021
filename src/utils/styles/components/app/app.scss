@@ -1,0 +1,28 @@
+.wrapImage {
+    overflow: hidden;
+    border-radius: 25px;
+    height: 223px;
+    .cover {
+        object-fit: scale-down;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 335px;
+    min-height: 255px;
+    max-width: 340px;
+    max-height: 340px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+    }
+}
