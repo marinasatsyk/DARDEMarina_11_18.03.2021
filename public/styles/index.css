@@ -16,13 +16,6 @@ body {
   overflow: hidden;
 }
 
-.main {
-  height: 100%;
-  flex: 1 1 auto;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
 .wrapImage {
   overflow: hidden;
   border-radius: 25px;
@@ -53,11 +46,8 @@ body {
 
 footer {
   background-color: black;
+  height: 200px;
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .header {

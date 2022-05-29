@@ -6,18 +6,6 @@ import { StyledLink, Loader } from '../../utils/Atoms';
 import Background from '../../assets/Background_home_D.png';
 
 function Home({ data }, { loading }) {
-    // const [logements, setLogements] = useState([]);
-    // const [loading, setLoading] = useState(false);
-    // useEffect(() => {
-    //     async function loadLogements() {
-    //         setLoading(true);
-    //         database(setLogements, () => {
-    //             setLoading(false);
-    //         });
-    //     }
-    //     loadLogements();
-    // }, []);
-    // let url = useLocation();
     return (
         <div className="App">
             <div className="wrapImage">

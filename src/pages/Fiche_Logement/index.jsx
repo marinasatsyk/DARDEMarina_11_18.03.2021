@@ -1,40 +1,49 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import React from 'react';
+import RatingScale from '../../utils/ratingScale';
 
 function Logement({ data }) {
-    // let url = useLocation();
-    // console.log(url);
-    // const categories = plantList.reduce(
-    //     (acc, logement) =>
-    //         acc.includes(url.slice(1)) ? acc : acc.concat(plant.category),
-    //     []
-    // )
-    // let url = useLocation();
-    return <div>Fiche logement</div>;
+    let { id } = useParams();
+    let param = { id }.id;
+    const house = data.find((elem) => elem.id === param);
+    const tags = house.tags;
+
+    return (
+        <div className="fiche_house">
+            <img src={`${house.cover}`} alt="" />
+            <article>
+                <div className="left_side">
+                    <h1>{house.title}</h1>
+                    <div className="location">{house.location}</div>
+                    <div className="tags">
+                        <ul>
+                            {tags.map((tag) => (
+                                <li className="tag" key={tag}>
+                                    {tag}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div className="right_side">
+                    <div className="name_host">{house.host.name}</div>
+                    <img
+                        src={`${house.host.picture}`}
+                        alt={`${house.host.name}`}
+                    />
+                    <div className="wrapper_rating">
+                        {<RatingScale scaleValue={house.rating} />}
+                    </div>
+                </div>
+                <div className="description_wrap">
+                    <div className="description_body">{house.description}</div>
+                </div>
+                <div className="equipments_wrap">
+                    <div className="equipments_body">{house.equipments}</div>
+                </div>
+            </article>
+        </div>
+    );
 }
 
 export default Logement;
-
-// const categories = plantList.reduce(
-//     (acc, plant) =>
-//         acc.includes(plant.category) ? acc : acc.concat(plant.category),
-//     []
-// )
-
-// return (
-//     <div>
-//         <ul>
-//             {categories.map((cat) => (
-//                 <li key={cat}>{cat}</li>
-//             ))}
-//         </ul>
-//         <ul className='lmj-plant-list'>
-//             {plantList.map((plant) => (
-//                 <li key={plant.id} className='lmj-plant-item'>
-//                     {plant.name}
-//                     {plant.isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
-//                 </li>
-//             ))}
-//         </ul>
-//     </div>
-// )

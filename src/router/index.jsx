@@ -25,8 +25,10 @@ function RouterF() {
         }
         loadLogements();
     }, []);
-    let url = useLocation();
-    const cardElem = logements.map((d) => d.id.find((elem) => elem === url));
+    // let url = useLocation();
+    // const cardElem = logements.map((d) =>
+    //     d.id.find((elem) => elem === url.pathname())
+    // );
 
     return (
         <>
@@ -36,16 +38,17 @@ function RouterF() {
                     <div className="main">
                         <Routes>
                             <Route
+                                exact
                                 path="/"
                                 element={
                                     <Home data={logements} loading={false} />
                                 }
                             />
                             <Route path="/about" element={<About />} />
-                            {cardElem} ?{' '}
-                            <Routes
-                                path={`/${cardElem}`}
-                                element={<Logement />}
+
+                            <Route
+                                path="/:id"
+                                element={<Logement data={logements} />}
                             />
                             <Route
                                 path="*"
