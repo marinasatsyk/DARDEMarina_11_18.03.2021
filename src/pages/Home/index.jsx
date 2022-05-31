@@ -12,15 +12,7 @@ function Home({ data }, { loading }) {
                 <img className="cover" src={Background} alt="paysage" />
             </div>
             <div className="wrap_cards">
-                {loading ? (
-                    <p>Chargement ...</p>
-                ) : (
-                    <ul>
-                        <li>
-                            <Cards data={data} />
-                        </li>
-                    </ul>
-                )}
+                {loading ? <p>Chargement ...</p> : <Cards data={data} />}
             </div>
         </div>
     );

@@ -1,0 +1,23 @@
+.title-dropdown {
+    background-color: $color-primary;
+    color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.close {
+    display: none;
+}
+.description-dropdown {
+    background-color: #f6f6f6;
+}
+.arrow_wrapper {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}

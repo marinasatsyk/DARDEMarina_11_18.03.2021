@@ -3,6 +3,7 @@ import {
     Route,
     Routes,
     useLocation,
+    Navigate,
 } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
@@ -35,6 +36,7 @@ function RouterF() {
             <Router>
                 <div id="wrapper_body">
                     <Header />
+
                     <div className="main">
                         <Routes>
                             <Route
@@ -44,12 +46,14 @@ function RouterF() {
                                     <Home data={logements} loading={false} />
                                 }
                             />
+
                             <Route path="/about" element={<About />} />
 
                             <Route
-                                path="/:id"
+                                path="/logements/:id"
                                 element={<Logement data={logements} />}
                             />
+
                             <Route
                                 path="*"
                                 element={<Error codeError="404" />}

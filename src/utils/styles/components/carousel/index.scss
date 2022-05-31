@@ -1,0 +1,30 @@
+.wrap_carousel {
+    background: rebeccapurple;
+    position: relative;
+    height: 100%;
+
+    & .displayed-img {
+        position: absolute;
+        object-fit: cover;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    & .left {
+        position: absolute;
+        left: 0;
+        width: 60px;
+        top: calc(50% - 30px);
+        height: 60px;
+    }
+
+    & .right {
+        position: absolute;
+        right: 0;
+        width: 60px;
+        top: calc(50% - 30px);
+        height: 60px;
+    }
+}

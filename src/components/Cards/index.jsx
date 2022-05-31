@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Card from '../Card';
 
 // ajouter onclick sur cart et ouvrir la page description
 function Cards({ data }) {
@@ -8,16 +9,11 @@ function Cards({ data }) {
     let url = useLocation();
     console.log(url);
     return (
-        <div className="cards">
+        <section className="cards">
             {data.map((d) => (
-                <Link to={`${url.pathname}${d.id}`} key={d.id}>
-                    <div key={d.id} className="card">
-                        <h2>{d.title}</h2>
-                        <img src={d.cover} alt={'image ' + d.title} />
-                    </div>
-                </Link>
+                <Card data={d} key={d.id} />
             ))}
-        </div>
+        </section>
     );
 }
 

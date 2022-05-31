@@ -1,16 +1,31 @@
 import { useLocation, useParams } from 'react-router-dom';
-import React from 'react';
+import React, { useState } from 'react';
 import RatingScale from '../../utils/ratingScale';
+import Carousel from '../../components/Carousel';
 
 function Logement({ data }) {
     let { id } = useParams();
     let param = { id }.id;
-    const house = data.find((elem) => elem.id === param);
+    const house =
+        data.length > 0
+            ? data.find((elem) => elem.id === param)
+            : {
+                  name: '',
+                  tags: [],
+                  pictures: [],
+                  title: '',
+                  location: '',
+                  host: { name: '' },
+              };
+
     const tags = house.tags;
 
     return (
-        <div className="fiche_house">
-            <img src={`${house.cover}`} alt="" />
+        <div className="logement">
+            <div className="carousel">
+                <Carousel photos={house.pictures} />
+            </div>
+
             <article>
                 <div className="left_side">
                     <h1>{house.title}</h1>
@@ -32,7 +47,7 @@ function Logement({ data }) {
                         alt={`${house.host.name}`}
                     />
                     <div className="wrapper_rating">
-                        {<RatingScale scaleValue={house.rating} />}
+                        <RatingScale scaleValue={house.rating} />
                     </div>
                 </div>
                 <div className="description_wrap">

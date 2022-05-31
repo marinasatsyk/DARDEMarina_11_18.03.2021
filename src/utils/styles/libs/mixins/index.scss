@@ -5,6 +5,7 @@
         rgba(0, 0, 0, 0.5) 100%
     );
 }
+
 @mixin gradient_thumb_red {
-    background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, #ff6060 0%, #803030 100%);
 }

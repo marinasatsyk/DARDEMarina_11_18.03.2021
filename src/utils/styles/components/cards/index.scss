@@ -1,0 +1,54 @@
+.wrap_cards {
+    background-color: rgba(255, 150, 150, 0.5);
+    border-radius: 10px;
+    ul {
+        padding: 0;
+    }
+    margin-top: 43px;
+    padding: 56px 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    gap: 50px;
+}
+
+.card {
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    h2 {
+        color: #fff;
+        padding: 0 15px;
+        text-decoration: none !important;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.thumbs {
+    border-radius: 10px;
+    min-width: 335px;
+    min-height: 255px;
+    width: 30%;
+    height: 340px;
+    max-height: 340px;
+    overflow: hidden;
+
+    @include gradient_thumb_red;
+
+    a,
+    a:visited,
+    h2 {
+        text-decoration: none;
+    }
+}
