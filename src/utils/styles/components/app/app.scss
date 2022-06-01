@@ -3,8 +3,26 @@
     border-radius: 25px;
     height: 223px;
     width: 100%;
-    .cover {
+    display: block;
+    position: relative;
+    margin-top: 63px;
+    &.about_img {
+        margin-bottom: 31px;
+    }
+
+    & .cover {
         width: 100%;
         object-fit: cover;
+    }
+
+    & .slogan {
+        display: block;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        font-size: 3em;
+        text-align: center;
+        color: white;
+        z-index: 1;
     }
 }

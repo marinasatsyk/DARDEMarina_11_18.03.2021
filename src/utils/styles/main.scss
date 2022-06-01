@@ -15,15 +15,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
     overflow: hidden;
     max-width: 1400px;
     margin: auto;
 }
-// .main {
-//     height: 100%;
-//     // flex: 1 1 auto;
-
-// }
-// #wrapper_main {
-//     margin: 100px 100px 0px 100px;
-// }
+.main {
+    flex-grow: 1;
+}

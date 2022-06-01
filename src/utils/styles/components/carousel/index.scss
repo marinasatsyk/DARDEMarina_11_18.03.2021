@@ -12,12 +12,21 @@
         height: 100%;
     }
 
+    & .numPhoto {
+        color: white;
+        position: absolute;
+        font-size: 18px;
+        bottom: 24px;
+        left: calc(50% - 9px);
+    }
+
     & .left {
         position: absolute;
         left: 0;
         width: 60px;
         top: calc(50% - 30px);
         height: 60px;
+        cursor: pointer;
     }
 
     & .right {
@@ -26,5 +35,6 @@
         width: 60px;
         top: calc(50% - 30px);
         height: 60px;
+        cursor: pointer;
     }
 }

@@ -1,0 +1,13 @@
+.wrapper_content_house {
+    display: flex;
+    justify-content: space-between;
+
+    .drop_house {
+        width: 580px;
+    }
+
+    h2,
+    #dropdown-content {
+        font-size: 18px !important;
+    }
+}

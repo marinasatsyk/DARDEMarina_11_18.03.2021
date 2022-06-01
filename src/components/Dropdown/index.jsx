@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import arrow_close from '../../assets/arrow_close.svg';
 import arrow_open from '../../assets/arrow_open.svg';
-import styled from 'styled-components';
 
 function Dropdown({ label, content, classname }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +9,7 @@ function Dropdown({ label, content, classname }) {
     }
 
     return (
-        <div className={'dropdown-wrap' + ' ' + classname}>
+        <div className={`dropdown-wrap ${classname}`}>
             <div className="wrap-content-dropdown">
                 <div className="title-dropdown">
                     <h2>{label}</h2>
@@ -24,14 +23,14 @@ function Dropdown({ label, content, classname }) {
                         ) : (
                             <img
                                 src={`${arrow_close}`}
-                                alt="button open description"
+                                alt="button close description"
                             />
                         )}
                     </div>
                 </div>
                 <div
                     className={`description-dropdown ${
-                        isOpen ? 'close' : 'open'
+                        isOpen ? 'open' : 'close'
                     }`}
                 >
                     <div id="dropdown-content">{content}</div>

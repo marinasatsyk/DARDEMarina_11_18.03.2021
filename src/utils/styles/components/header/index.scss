@@ -1,3 +1,9 @@
+header {
+    flex-shrink: 1;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -22,5 +28,9 @@
         text-decoration: none;
         color: black;
         color: #ff6060;
+    }
+
+    a.active {
+        text-decoration: underline $color-primary !important;
     }
 }

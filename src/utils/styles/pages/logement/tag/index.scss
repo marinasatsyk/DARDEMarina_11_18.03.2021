@@ -1,0 +1,26 @@
+.tags {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .tag {
+        background: $color-primary;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 25px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        &.tag_display {
+            width: fit-content;
+            height: 25px;
+        }
+    }
+}

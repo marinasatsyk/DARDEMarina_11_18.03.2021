@@ -26,10 +26,6 @@ function RouterF() {
         }
         loadLogements();
     }, []);
-    // let url = useLocation();
-    // const cardElem = logements.map((d) =>
-    //     d.id.find((elem) => elem === url.pathname())
-    // );
 
     return (
         <>

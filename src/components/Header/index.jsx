@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import About from '../../pages/About';
 import Home from '../../pages/Home';
 import Logo from '../../assets/LOGO_red.svg';
@@ -10,10 +10,10 @@ function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Accueil</Link>
+                            <NavLink to="/">Accueil</NavLink>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <NavLink to="/about">About</NavLink>
                         </li>
                     </ul>
                 </nav>

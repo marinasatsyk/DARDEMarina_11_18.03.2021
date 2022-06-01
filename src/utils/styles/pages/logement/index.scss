@@ -1,5 +1,8 @@
 .logement {
     & .carousel {
         height: 500px;
+        border-radius: 25px;
+        overflow: hidden;
     }
+    color: $color-primary;
 }

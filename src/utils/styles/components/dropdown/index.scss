@@ -1,7 +1,14 @@
+.wrap_dropdown_menu {
+    width: 80%;
+    margin: 0 auto;
+}
+.dropdown-wrap.about {
+    margin: 31px;
+}
 .title-dropdown {
     background-color: $color-primary;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +22,18 @@
 }
 .description-dropdown {
     background-color: #f6f6f6;
+    color: $color-primary;
+    font-size: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .arrow_wrapper {
-    border: 1px solid black;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }

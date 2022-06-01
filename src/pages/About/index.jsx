@@ -1,6 +1,8 @@
 import React from 'react';
+import BigImage from '../../components/bigImage';
 import Dropdown from '../../components/Dropdown';
 import RatingScale from '../../utils/ratingScale';
+import Background from '../../assets/Background_about_D.png';
 
 function About() {
     const about = {
@@ -25,25 +27,30 @@ function About() {
     };
 
     return (
-        <div>
-            <div>A propos</div>
-            <Dropdown
-                classname="myclass about"
-                label={about.fiabilite.label}
-                content={about.fiabilite.content}
-            />
-            <Dropdown
-                label={about.respect.label}
-                content={about.respect.content}
-            />
-            <Dropdown
-                label={about.service.label}
-                content={about.service.content}
-            />
-            <Dropdown
-                label={about.securite.label}
-                content={about.securite.content}
-            />
+        <div className="wrapAbout">
+            <BigImage imgPath={Background} classN="about_img" />
+            <div className="wrap_dropdown_menu">
+                <Dropdown
+                    classname="about"
+                    label={about.fiabilite.label}
+                    content={about.fiabilite.content}
+                />
+                <Dropdown
+                    classname="about"
+                    label={about.respect.label}
+                    content={about.respect.content}
+                />
+                <Dropdown
+                    classname="about"
+                    label={about.service.label}
+                    content={about.service.content}
+                />
+                <Dropdown
+                    classname="about"
+                    label={about.securite.label}
+                    content={about.securite.content}
+                />
+            </div>
         </div>
     );
 }

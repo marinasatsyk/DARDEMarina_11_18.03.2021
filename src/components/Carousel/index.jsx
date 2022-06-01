@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import arrow_left from '../../assets/arrow_left.svg';
 import arrow_right from '../../assets/arrow_right.svg';
 
-// ajouter onclick sur cart et ouvrir la page description
 function Carousel({ photos }) {
     const [indexImg, setIndexImg] = useState(0);
     const updateImg = (s) => {
@@ -23,6 +22,7 @@ function Carousel({ photos }) {
                     updateImg(-1);
                 }}
             />
+            <div className="numPhoto">{`${indexImg + 1}/${photos.length}`}</div>
             <img
                 src={`${arrow_right}`}
                 alt="flash forward"
