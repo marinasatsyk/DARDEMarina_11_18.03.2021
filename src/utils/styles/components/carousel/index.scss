@@ -27,6 +27,11 @@
         top: calc(50% - 30px);
         height: 60px;
         cursor: pointer;
+        @media #{$mobile-only} {
+            width: 20px;
+            height: 20px;
+            top: calc(50% - 10px);
+        }
     }
 
     & .right {
@@ -36,5 +41,10 @@
         top: calc(50% - 30px);
         height: 60px;
         cursor: pointer;
+        @media #{$mobile-only} {
+            width: 20px;
+            height: 20px;
+            top: calc(50% - 10px);
+        }
     }
 }

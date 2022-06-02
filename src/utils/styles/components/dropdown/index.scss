@@ -1,6 +1,9 @@
 .wrap_dropdown_menu {
     width: 80%;
     margin: 0 auto;
+    @media #{$mobile-only} {
+        width: unset;
+    }
 }
 .dropdown-wrap {
     margin-bottom: 20px;
@@ -10,6 +13,9 @@
 }
 .dropdown-wrap.about {
     margin: 31px;
+    @media #{$mobile-only} {
+        margin: 0 auto 20px auto;
+    }
 }
 .title-dropdown {
     background-color: $color-primary;
@@ -21,6 +27,11 @@
     align-content: center;
     padding-right: 10px;
     padding-left: 10px;
+    @media #{$mobile-only} {
+        h2 {
+            font-size: 13px !important;
+        }
+    }
 }
 
 .close {
@@ -37,6 +48,9 @@
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
+    @media #{$mobile-only} {
+        font-size: 12px !important;
+    }
 }
 .arrow_wrapper {
     width: 30px;

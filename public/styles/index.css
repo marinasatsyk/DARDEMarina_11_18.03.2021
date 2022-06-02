@@ -243,6 +243,11 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+@media all and (max-width: 767px) {
+  .wrap_dropdown_menu {
+    width: unset;
+  }
+}
 
 .dropdown-wrap {
   margin-bottom: 20px;
@@ -250,6 +255,11 @@ header {
 
 .dropdown-wrap.about {
   margin: 31px;
+}
+@media all and (max-width: 767px) {
+  .dropdown-wrap.about {
+    margin: 0 auto 20px auto;
+  }
 }
 
 .title-dropdown {
@@ -262,6 +272,11 @@ header {
   align-content: center;
   padding-right: 10px;
   padding-left: 10px;
+}
+@media all and (max-width: 767px) {
+  .title-dropdown h2 {
+    font-size: 13px !important;
+  }
 }
 
 .close {
@@ -279,6 +294,11 @@ header {
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media all and (max-width: 767px) {
+  .description-dropdown {
+    font-size: 12px !important;
+  }
 }
 
 .arrow_wrapper {
@@ -314,6 +334,13 @@ header {
   height: 60px;
   cursor: pointer;
 }
+@media all and (max-width: 767px) {
+  .wrap_carousel .left {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+  }
+}
 .wrap_carousel .right {
   position: absolute;
   right: 0;
@@ -321,6 +348,13 @@ header {
   top: calc(50% - 30px);
   height: 60px;
   cursor: pointer;
+}
+@media all and (max-width: 767px) {
+  .wrap_carousel .right {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+  }
 }
 
 .logement {
