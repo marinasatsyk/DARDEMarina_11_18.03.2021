@@ -516,20 +516,49 @@ header {
   color: #ff6060;
   text-align: center;
 }
+@media all and (max-width: 767px) {
+  .error_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 .error_page h2 {
   display: block;
   font-size: 288px;
   font-weight: bold;
   margin: 0;
 }
+@media all and (max-width: 767px) {
+  .error_page h2 {
+    font-size: 96px;
+    margin-top: 30%;
+  }
+}
 .error_page p {
   display: block;
   font-size: 36px;
   margin-bottom: 300px;
 }
+@media all and (max-width: 767px) {
+  .error_page p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: unset;
+  }
+}
 .error_page a {
   display: block;
   color: #ff6060;
+}
+.error_page a .retour {
+  font-size: 18px;
+}
+@media all and (max-width: 767px) {
+  .error_page a .retour {
+    margin-top: 30%;
+    font-size: 14px;
+  }
 }
 .error_page a:hover {
   color: #ff6060;

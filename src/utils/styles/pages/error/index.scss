@@ -2,23 +2,43 @@
     margin: 0 auto;
     color: $color-primary;
     text-align: center;
+    @media #{$mobile-only} {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
     h2 {
         display: block;
         font-size: 288px;
         font-weight: bold;
         margin: 0;
+        @media #{$mobile-only} {
+            font-size: 96px;
+            margin-top: 30%;
+        }
     }
     p {
         display: block;
         font-size: 36px;
         margin-bottom: 300px;
+        @media #{$mobile-only} {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: unset;
+        }
     }
     a {
         display: block;
-
         color: $color-primary;
 
+        .retour {
+            font-size: 18px;
+            @media #{$mobile-only} {
+                margin-top: 30%;
+                font-size: 14px;
+            }
+        }
         &:hover {
             color: $color-primary;
         }
