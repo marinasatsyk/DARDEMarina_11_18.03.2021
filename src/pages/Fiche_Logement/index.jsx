@@ -61,7 +61,7 @@ function Logement({ data }) {
                     <Dropdown
                         label={'Equipements'}
                         content={equipments.map(e => (
-                            <p>e</p>
+                            <p key={`${e}-${param}`}>{e}</p>
                         ))}
                         classname={'equipments_house drop_house'}
                     />

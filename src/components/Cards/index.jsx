@@ -5,12 +5,10 @@ import Card from '../Card';
 
 // ajouter onclick sur cart et ouvrir la page description
 function Cards({ data }) {
-    console.log(data);
     let url = useLocation();
-    console.log(url);
     return (
         <section className="cards">
-            {data.map((d) => (
+            {data.map(d => (
                 <Card data={d} key={d.id} />
             ))}
         </section>

@@ -30,7 +30,7 @@ function Dropdown({ label, content, classname }) {
                 </div>
                 <div
                     className={`description-dropdown ${
-                        isOpen ? 'open' : 'close'
+                        isOpen ? 'close' : 'open'
                     }`}
                 >
                     <div id="dropdown-content">{content}</div>
