@@ -9,8 +9,17 @@
         }
     }
 
-    h2,
+    h2 {
+        font-size: 18px !important;
+        @media #{$mobile-only} {
+            font-size: 13px !important;
+        }
+    }
+
     #dropdown-content {
         font-size: 18px !important;
+        @media #{$mobile-only} {
+            font-size: 12px !important;
+        }
     }
 }

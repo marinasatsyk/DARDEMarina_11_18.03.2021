@@ -3,6 +3,9 @@
         height: 500px;
         border-radius: 25px;
         overflow: hidden;
+        @media #{$mobile-only} {
+            height: 255px;
+        }
     }
     color: $color-primary;
 }

@@ -2,6 +2,12 @@
     width: 80%;
     margin: 0 auto;
 }
+.dropdown-wrap {
+    margin-bottom: 20px;
+    // @media #{$mobile-only} {
+    //     margin-bottom: 20px;
+    // }
+}
 .dropdown-wrap.about {
     margin: 31px;
 }

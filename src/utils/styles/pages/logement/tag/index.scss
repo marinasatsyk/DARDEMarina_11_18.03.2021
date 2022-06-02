@@ -4,6 +4,7 @@
         flex-direction: row;
         list-style-type: none;
         padding: 0;
+        flex-wrap: wrap;
     }
 
     .tag {
@@ -11,16 +12,26 @@
         color: white;
         font-size: 14px;
         text-align: center;
-        border-radius: 25px;
+        border-radius: 10px;
         margin-right: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 40px;
         padding-right: 40px;
+        @media #{$mobile-only} {
+            font-size: 10px;
+            padding-left: unset;
+            padding-right: unset;
+            border-radius: 5px;
+        }
         &.tag_display {
             width: fit-content;
             height: 25px;
+            @media #{$mobile-only} {
+                height: 18px;
+                min-width: 84px;
+            }
         }
     }
 }

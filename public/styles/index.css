@@ -30,7 +30,7 @@ body {
 
 @media all and (max-width: 767px) {
   #wrapper_body {
-    max-width: 696px;
+    max-width: 335px;
   }
 }
 .wrapImage {
@@ -99,6 +99,11 @@ footer {
 .footer .description_footer {
   font-size: 24px;
 }
+@media all and (max-width: 767px) {
+  .footer .description_footer {
+    font-size: 12px;
+  }
+}
 
 header {
   flex-shrink: 1;
@@ -166,6 +171,13 @@ header {
   margin-top: 43px;
   padding: 56px 50px;
 }
+@media all and (max-width: 767px) {
+  .wrap_cards {
+    background-color: unset;
+    margin-top: unset;
+    padding: 22px 50px;
+  }
+}
 .wrap_cards ul {
   padding: 0;
 }
@@ -176,6 +188,11 @@ header {
   justify-content: space-around;
   margin: 0;
   gap: 50px;
+}
+@media all and (max-width: 767px) {
+  .cards {
+    gap: 20px;
+  }
 }
 
 .card a,
@@ -194,6 +211,11 @@ header {
   width: 100%;
   height: 250px;
 }
+@media all and (max-width: 767px) {
+  .card img {
+    height: 75%;
+  }
+}
 
 .thumbs {
   border-radius: 10px;
@@ -206,6 +228,11 @@ header {
   text-decoration: none;
   background: linear-gradient(180deg, #ff6060 0%, #803030 100%);
 }
+@media all and (max-width: 767px) {
+  .thumbs {
+    height: 255px;
+  }
+}
 .thumbs a,
 .thumbs a:visited,
 .thumbs h2 {
@@ -215,6 +242,10 @@ header {
 .wrap_dropdown_menu {
   width: 80%;
   margin: 0 auto;
+}
+
+.dropdown-wrap {
+  margin-bottom: 20px;
 }
 
 .dropdown-wrap.about {
@@ -300,19 +331,25 @@ header {
   border-radius: 25px;
   overflow: hidden;
 }
+@media all and (max-width: 767px) {
+  .logement .carousel {
+    height: 255px;
+  }
+}
 
 .tags ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 .tags .tag {
   background: #ff6060;
   color: white;
   font-size: 14px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 10px;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -320,9 +357,23 @@ header {
   padding-left: 40px;
   padding-right: 40px;
 }
+@media all and (max-width: 767px) {
+  .tags .tag {
+    font-size: 10px;
+    padding-left: unset;
+    padding-right: unset;
+    border-radius: 5px;
+  }
+}
 .tags .tag.tag_display {
   width: fit-content;
   height: 25px;
+}
+@media all and (max-width: 767px) {
+  .tags .tag.tag_display {
+    height: 18px;
+    min-width: 84px;
+  }
 }
 
 .left_side {
@@ -331,6 +382,14 @@ header {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+@media all and (max-width: 767px) {
+  .left_side h1 {
+    font-size: 18px;
+  }
+  .left_side .location {
+    font-size: 14px;
+  }
+}
 
 .right_side {
   display: flex;
@@ -338,10 +397,27 @@ header {
   justify-content: space-evenly;
   align-items: flex-end;
 }
+@media all and (max-width: 767px) {
+  .right_side {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right_side .star img {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .wrapper_title {
   display: flex;
   justify-content: space-between;
+}
+@media all and (max-width: 767px) {
+  .wrapper_title {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
 }
 .wrapper_title .host {
   display: flex;
@@ -349,12 +425,23 @@ header {
   align-items: center;
   font-size: 18px;
 }
+@media all and (max-width: 767px) {
+  .wrapper_title .host {
+    font-size: 12px;
+  }
+}
 .wrapper_title .wrapper_img_host {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin-left: 10px;
   overflow: hidden;
+}
+@media all and (max-width: 767px) {
+  .wrapper_title .wrapper_img_host {
+    width: 32px;
+    height: 32px;
+  }
 }
 .wrapper_title .wrapper_img_host img {
   width: 100%;
@@ -373,9 +460,21 @@ header {
     width: 100%;
   }
 }
-.wrapper_content_house h2,
+.wrapper_content_house h2 {
+  font-size: 18px !important;
+}
+@media all and (max-width: 767px) {
+  .wrapper_content_house h2 {
+    font-size: 13px !important;
+  }
+}
 .wrapper_content_house #dropdown-content {
   font-size: 18px !important;
+}
+@media all and (max-width: 767px) {
+  .wrapper_content_house #dropdown-content {
+    font-size: 12px !important;
+  }
 }
 
 .error_page {

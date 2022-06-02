@@ -12,9 +12,13 @@ function RatingScale({ scaleValue }) {
         <div>
             {range.map(rangeElem =>
                 scaleValue >= rangeElem ? (
-                    <span key={rangeElem.toString()}>{activRanc}</span>
+                    <span key={rangeElem.toString()} className="star">
+                        {activRanc}
+                    </span>
                 ) : (
-                    <span key={rangeElem.toString()}>{nonActivRanc}</span>
+                    <span key={rangeElem.toString()} className="star">
+                        {nonActivRanc}
+                    </span>
                 )
             )}
         </div>

@@ -17,5 +17,9 @@ footer {
 
     & .description_footer {
         font-size: 24px;
+
+        @media #{$mobile-only} {
+            font-size: 12px;
+        }
     }
 }
