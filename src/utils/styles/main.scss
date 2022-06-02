@@ -24,3 +24,9 @@ body {
 .main {
     flex-grow: 1;
 }
+
+@media #{$mobile-only} {
+    #wrapper_body {
+        max-width: 696px;
+    }
+}

@@ -28,6 +28,11 @@ body {
   flex-grow: 1;
 }
 
+@media all and (max-width: 767px) {
+  #wrapper_body {
+    max-width: 696px;
+  }
+}
 .wrapImage {
   overflow: hidden;
   border-radius: 25px;
@@ -37,22 +42,41 @@ body {
   position: relative;
   margin-top: 63px;
 }
+@media all and (max-width: 767px) {
+  .wrapImage {
+    border-radius: 10px;
+    height: 111px;
+    margin-top: unset;
+  }
+}
 .wrapImage.about_img {
   margin-bottom: 31px;
 }
 .wrapImage .cover {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+@media all and (max-width: 767px) {
+  .wrapImage .cover {
+    object-position: 50% 50%;
+  }
 }
 .wrapImage .slogan {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   font-size: 3em;
   text-align: center;
   color: white;
   z-index: 1;
+}
+@media all and (max-width: 767px) {
+  .wrapImage .slogan {
+    font-size: 24px;
+  }
 }
 
 footer {
@@ -88,18 +112,44 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 24px;
+  text-transform: unset;
   font-weight: 500;
+}
+@media all and (max-width: 767px) {
+  .header {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .header nav {
+    width: 50%;
+  }
 }
 .header img {
   height: 68px;
+}
+@media all and (max-width: 767px) {
+  .header img {
+    height: 47px;
+  }
 }
 .header ul {
   display: flex;
   justify-content: space-between;
   min-width: 300px;
 }
+@media all and (max-width: 767px) {
+  .header ul {
+    min-width: unset;
+    justify-content: right;
+  }
+}
 .header li {
   list-style-type: none;
+}
+@media all and (max-width: 767px) {
+  .header li {
+    padding-left: 10px;
+  }
 }
 .header a {
   text-decoration: none;
@@ -202,7 +252,6 @@ header {
 
 .arrow_wrapper {
   width: 30px;
-  height: 30px;
   cursor: pointer;
 }
 
@@ -314,9 +363,15 @@ header {
 .wrapper_content_house {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .wrapper_content_house .drop_house {
-  width: 580px;
+  width: 48%;
+}
+@media all and (max-width: 767px) {
+  .wrapper_content_house .drop_house {
+    width: 100%;
+  }
 }
 .wrapper_content_house h2,
 .wrapper_content_house #dropdown-content {

@@ -1,8 +1,10 @@
+import React from 'react';
+
 function Tag({ tags, classTag }) {
     return (
         <div className="tags">
             <ul>
-                {tags.map((tag) => (
+                {tags.map(tag => (
                     <li className={`tag ${classTag}`} key={tag}>
                         <p>{tag}</p>
                     </li>

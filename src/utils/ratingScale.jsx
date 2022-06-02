@@ -1,3 +1,4 @@
+import React from 'react';
 import Red_star from '../assets/Star_red.svg';
 import Grey_star from '../assets/Star_grey.svg';
 
@@ -9,7 +10,7 @@ function RatingScale({ scaleValue }) {
 
     return (
         <div>
-            {range.map((rangeElem) =>
+            {range.map(rangeElem =>
                 scaleValue >= rangeElem ? (
                     <span key={rangeElem.toString()}>{activRanc}</span>
                 ) : (

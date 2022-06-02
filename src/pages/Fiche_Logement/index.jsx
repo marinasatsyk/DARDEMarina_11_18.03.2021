@@ -9,17 +9,18 @@ function Logement({ data }) {
     let param = { id }.id;
     const house =
         data.length > 0
-            ? data.find((elem) => elem.id === param)
+            ? data.find(elem => elem.id === param)
             : {
                   name: '',
                   tags: [],
                   pictures: [],
                   title: '',
                   location: '',
-                  host: { name: '' },
+                  host: { name: '' }
               };
 
     const tags = house.tags;
+    const equipments = house.equipments;
 
     return (
         <div className="logement">
@@ -59,7 +60,9 @@ function Logement({ data }) {
 
                     <Dropdown
                         label={'Equipements'}
-                        content={house.equipments}
+                        content={equipments.map(e => (
+                            <p>e</p>
+                        ))}
                         classname={'equipments_house drop_house'}
                     />
                 </div>

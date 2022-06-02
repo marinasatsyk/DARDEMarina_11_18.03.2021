@@ -1,3 +1,5 @@
+import React from 'react';
+
 function BigImage({ imgPath, classN, text }) {
     return (
         <div className={`wrapImage ${classN}`}>

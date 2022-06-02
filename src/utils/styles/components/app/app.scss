@@ -6,23 +6,37 @@
     display: block;
     position: relative;
     margin-top: 63px;
+    @media #{$mobile-only} {
+        border-radius: 10px;
+        height: 111px;
+        // width: 335px;
+        margin-top: unset;
+    }
     &.about_img {
         margin-bottom: 31px;
     }
 
     & .cover {
         width: 100%;
+        height: 100%;
         object-fit: cover;
+        @media #{$mobile-only} {
+            object-position: 50% 50%;
+        }
     }
 
     & .slogan {
         display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
+        transform: translateY(-50%);
         width: 100%;
         font-size: 3em;
         text-align: center;
         color: white;
         z-index: 1;
+        @media #{$mobile-only} {
+            font-size: 24px;
+        }
     }
 }

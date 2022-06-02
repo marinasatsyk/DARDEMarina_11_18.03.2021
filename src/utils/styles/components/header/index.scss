@@ -10,20 +10,42 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
+    text-transform: unset;
     font-weight: 500;
+
+    @media #{$mobile-only} {
+        font-size: 12px;
+        text-transform: uppercase;
+
+        nav {
+            width: 50%;
+        }
+    }
 
     img {
         height: 68px;
+        @media #{$mobile-only} {
+            height: 47px;
+        }
     }
 
     ul {
         display: flex;
         justify-content: space-between;
         min-width: 300px;
+        @media #{$mobile-only} {
+            min-width: unset;
+            justify-content: right;
+        }
     }
+
     li {
         list-style-type: none;
+        @media #{$mobile-only} {
+            padding-left: 10px;
+        }
     }
+
     a {
         text-decoration: none;
         color: black;

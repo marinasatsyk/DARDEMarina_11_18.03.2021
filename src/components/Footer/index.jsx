@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo from '../../assets/LOGO_black.svg';
 
 function Footer() {

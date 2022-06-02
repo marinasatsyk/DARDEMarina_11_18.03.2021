@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
@@ -27,7 +28,7 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     font-size: 18px;
     text-align: center;
-    ${(props) =>
+    ${props =>
         props.$isFullLink &&
         `color: white; 
     border-radius: 30px; 

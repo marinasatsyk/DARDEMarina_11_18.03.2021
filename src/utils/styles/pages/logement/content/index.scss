@@ -1,9 +1,12 @@
 .wrapper_content_house {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     .drop_house {
-        width: 580px;
+        width: 48%;
+        @media #{$mobile-only} {
+            width: 100%;
+        }
     }
 
     h2,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import arrow_close from '../../assets/arrow_close.svg';
 import arrow_open from '../../assets/arrow_open.svg';
 

@@ -1,6 +1,7 @@
 @use 'sass:math';
 @import url('static/fonts/Montserrat/fonts/webfonts/Montserrat.css');
 @import './libs/mixins';
+@import './libs/mixins/responsive';
 @import './colors.scss';
 @import './main.scss';
 @import './components/app/app.scss';
